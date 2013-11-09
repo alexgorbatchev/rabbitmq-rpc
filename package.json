@@ -1,0 +1,26 @@
+{
+  "name": "rabbitmq-rpc",
+  "main": "./rabbitmq-rpc.js",
+  "version": "0.5.0",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.spec.coffee",
+    "pretest": "./node_modules/.bin/coffee --bare --compile *.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.alexgorbatchev.com:alexgorbatchev/rabbitmq-rpc.git"
+  },
+  "peerDependencies": {
+    "amqp": "0.x.x"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "uuid": "~1.4.1"
+  }
+}
